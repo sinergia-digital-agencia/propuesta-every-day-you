@@ -81,6 +81,7 @@
     font-family:'Poppins',sans-serif; font-weight:300; font-size:20px; letter-spacing:.3px;
     color:var(--text-soft); max-width:620px; margin-top:34px; line-height:1.9;
   }
+  .hero .sub b{ color:var(--nude-soft); font-weight:600; }
   .hero .signature{
     margin-top:56px; font-family:'Lora',serif; font-style:italic; font-size:17px; color:var(--nude);
   }
@@ -113,6 +114,34 @@
   .lvl.featured .t{ color:var(--gold-bright); }
   .lvl .crown{ position:absolute; top:-1px; left:0; right:0; height:2px; background:var(--gold); display:none; }
   .lvl.featured .crown{ display:block; }
+
+  /* ---------- NIVEL III — PANEL ÚNICO ---------- */
+  .level-solo{
+    margin-top:50px;
+    border:1px solid var(--gold);
+    background:linear-gradient(160deg, rgba(201,164,103,0.10), transparent 60%);
+    padding:50px 54px;
+    position:relative;
+  }
+  .level-solo::before{
+    content:''; position:absolute; top:0; left:0; right:0; height:2px;
+    background:linear-gradient(90deg, transparent, var(--gold), transparent);
+  }
+  .level-solo .ls-tag{
+    font-family:'Poppins',sans-serif; font-size:12px; letter-spacing:3px; color:var(--gold);
+    margin-bottom:16px;
+  }
+  .level-solo .ls-title{
+    font-family:'Lora',serif; font-style:italic; font-size:44px; color:var(--ivory); margin-bottom:18px;
+  }
+  .level-solo .ls-desc{
+    font-family:'Poppins',sans-serif; font-weight:300; font-size:17px; line-height:1.85;
+    color:var(--text-soft); max-width:640px; margin-bottom:32px;
+  }
+  .level-solo .ls-points{ display:flex; gap:36px; flex-wrap:wrap; border-top:1px solid var(--hair); padding-top:28px; }
+  .level-solo .ls-point{ flex:1; min-width:190px; }
+  .level-solo .ls-point .pn{ font-family:'Lora',serif; font-style:italic; font-size:22px; color:var(--gold); margin-bottom:8px; }
+  .level-solo .ls-point .pd{ font-family:'Poppins',sans-serif; font-size:13px; line-height:1.7; color:var(--nude); }
 
   /* ---------- TASK ENTRIES (editorial list, not cards) ---------- */
   .task{ padding:40px 0; border-bottom:1px solid var(--hair); display:flex; gap:44px; }
@@ -223,33 +252,34 @@
 <section class="hero" id="resumen">
   <div class="label">PROPUESTA PREPARADA EXCLUSIVAMENTE PARA PAOLA GIRALDO</div>
   <h1>Every Day You<span class="amp">.</span></h1>
-  <p class="sub sans">El montaje completo de tu primer producto digital — "Transforma tus Brazos" — ejecutado de principio a fin por nuestro equipo. Tú no montas nada, no aprendes ninguna plataforma: nosotras dejamos todo listo y te guiamos con una estrategia clara para que tú lances y vendas.</p>
+  <p class="sub sans">El montaje completo de tu primer producto digital — "Transforma tus Brazos" — ejecutado de principio a fin por nuestro equipo. Tú no montas nada, no aprendes ninguna plataforma: nosotras dejamos todo listo y te guiamos con una estrategia clara para que <b>tú lances y vendas</b>.</p>
   <div class="signature">— Nivel 3 de montaje: lo hacemos por ti.</div>
   <div class="prep-line sans">PREPARADO POR ALE Y EVO · 17/07/2026</div>
 </section>
 
 <section class="tight">
   <div class="label">EL PUNTO DE PARTIDA</div>
-  <h2 class="title">Una marca lista<br>para convertirse en producto.</h2>
-  <p class="copy">Paola cuenta con una marca personal reconocida en el mundo de modelos y contenido, y hoy da el siguiente paso: posicionarse en el nicho fitness con su primer producto digital, <b>"Transforma tus Brazos"</b>, ofrecido como suscripción mensual dentro de Hotmart, bajo la comunidad <b>Every Day You</b>.</p>
-  <p class="copy">Este no es un servicio de mentoría. En la mentoría, la clienta aprende y ejecuta sola. Aquí, nuestro equipo construye cada pieza — técnica y estratégica — para que Paola reciba su producto completamente terminado.</p>
+  <h2 class="title">Tu marca, lista<br>para convertirse en producto.</h2>
+  <p class="copy">Tú ya cuentas con una marca personal reconocida en el mundo de modelos y contenido, mas no en el nicho fitness como tal. Ahora darás el siguiente paso: posicionarte en el nicho fitness con tu primer producto digital, <b>"Transforma tus Brazos"</b>, ofrecido como suscripción mensual dentro de la plataforma de Hotmart, bajo la comunidad <b>Every Day You</b>.</p>
+  <p class="copy">Este no es un servicio de mentoría. En la mentoría, la clienta estudia, aprende y ejecuta sola. Aquí, nuestro equipo construye cada pieza de tu producto — nos encargamos de toda la parte técnica — para que recibas tu producto completamente terminado y bien configurado, ahorrándote horas de inversión en tiempo y dinero al no tener que aprender todo esto desde cero.</p>
 
-  <div class="levels">
-    <div class="lvl">
-      <div class="n">NIVEL I</div>
-      <div class="t">Lo haces tú</div>
-      <div class="d">Nuestra mentoría — US$ 1,500.<br>Ella aprende y ejecuta sola.</div>
-    </div>
-    <div class="lvl">
-      <div class="n">NIVEL II</div>
-      <div class="t">Lo hacemos contigo</div>
-      <div class="d">Trabajo colaborativo,<br>con acompañamiento en la ejecución.</div>
-    </div>
-    <div class="lvl featured">
-      <div class="crown"></div>
-      <div class="n">NIVEL III — ESTA PROPUESTA</div>
-      <div class="t">Lo hacemos por ti</div>
-      <div class="d">Montaje 100% ejecutado por nosotras.<br>Lanzamiento guiado — lo ejecutas tú.</div>
+  <div class="level-solo">
+    <div class="ls-tag">EL NIVEL DE SERVICIO DE ESTA PROPUESTA</div>
+    <div class="ls-title">Nivel III — Lo hacemos por ti.</div>
+    <p class="ls-desc">Significa que nuestro equipo ejecuta cada pieza técnica de tu producto — desde la oferta hasta la última automatización — sin que tú tengas que aprender ninguna plataforma ni perder horas resolviendo algo que no es tu trabajo. Tú te enfocas en ser la cara de tu marca; nosotras nos encargamos de que todo funcione.</p>
+    <div class="ls-points">
+      <div class="ls-point">
+        <div class="pn">I</div>
+        <div class="pd">Cero curva de aprendizaje. No necesitas estudiar Hotmart, WordPress ni herramientas técnicas.</div>
+      </div>
+      <div class="ls-point">
+        <div class="pn">II</div>
+        <div class="pd">Cero errores de principiante. Cada pieza queda configurada con nuestro estándar profesional.</div>
+      </div>
+      <div class="ls-point">
+        <div class="pn">III</div>
+        <div class="pd">Seis años de experiencia trabajando por ti, no contigo — el resultado, sin el proceso.</div>
+      </div>
     </div>
   </div>
 </section>
@@ -422,7 +452,7 @@
     <div class="mcard">
       <div class="tag">PROPUESTA I</div>
       <div class="mname">Montaje Ejecutado</div>
-      <div class="price">US$ 3,500</div>
+      <div class="price">US$ 3,000</div>
       <div class="pmodel">FEE ÚNICO · EJECUCIÓN COMPLETA</div>
       <ul>
         <li>Oferta, avatar y copy de 3 páginas</li>
@@ -434,7 +464,7 @@
     <div class="mcard reco">
       <div class="tag">PROPUESTA II</div>
       <div class="mname">Montaje + Playbook</div>
-      <div class="price">US$ 5,000</div>
+      <div class="price">US$ 4,000</div>
       <div class="pmodel">FEE ÚNICO · + 4 SEMANAS DE ACOMPAÑAMIENTO</div>
       <ul>
         <li>Todo lo de la Propuesta I</li>
