@@ -191,7 +191,15 @@
   }
   .mcard .tag{ font-family:'Poppins',sans-serif; font-size:11.5px; letter-spacing:3px; color:var(--gold); margin-bottom:24px; }
   .mcard .mname{ font-family:'Lora',serif; font-style:italic; font-size:35px; color:var(--ivory); margin-bottom:18px; }
+  .mcard .price-old{
+    font-family:'Poppins',sans-serif; font-weight:400; font-size:20px; color:var(--text-soft);
+    text-decoration:line-through; text-decoration-color:#8A6A56; margin-bottom:4px;
+  }
   .mcard .price{ font-family:'Poppins',sans-serif; font-weight:300; font-size:62px; color:var(--gold-bright); margin-bottom:6px; }
+  .mcard .price-tag{
+    display:inline-block; font-family:'Poppins',sans-serif; font-size:10.5px; letter-spacing:1.5px;
+    color:var(--onyx); background:var(--nude); padding:4px 10px; border-radius:2px; margin-bottom:14px;
+  }
   .mcard .pmodel{ font-family:'Poppins',sans-serif; font-size:14px; color:var(--nude); letter-spacing:.5px; margin-bottom:30px; }
   .mcard ul{ list-style:none; }
   .mcard li{
@@ -210,6 +218,61 @@
   .why-item{ display:flex; gap:24px; padding:22px 0; border-bottom:1px solid var(--hair); }
   .why-item .wn{ font-family:'Lora',serif; font-style:italic; font-size:27px; color:var(--gold); min-width:40px; }
   .why-item p{ font-family:'Poppins',sans-serif; font-size:16.5px; line-height:1.95; color:var(--text-soft); }
+
+  /* ---------- TIEMPOS ---------- */
+  .time-stats{ display:flex; gap:34px; margin-top:50px; }
+  .tstat{
+    flex:1; border:1px solid var(--hair); padding:40px 34px;
+    background:linear-gradient(160deg, rgba(201,164,103,0.06), transparent 65%);
+    position:relative;
+  }
+  .tstat::before{
+    content:''; position:absolute; top:0; left:0; right:0; height:2px;
+    background:linear-gradient(90deg, transparent, var(--gold), transparent);
+  }
+  .tstat .tnum{ font-family:'Lora',serif; font-style:italic; font-size:56px; color:var(--gold-bright); margin-bottom:10px; }
+  .tstat .tlabel{ font-family:'Poppins',sans-serif; font-size:13px; letter-spacing:1.5px; text-transform:uppercase; color:var(--nude); margin-bottom:14px; }
+  .tstat .tdesc{ font-family:'Poppins',sans-serif; font-weight:300; font-size:13.5px; line-height:1.8; color:var(--text-soft); }
+  .time-note{
+    font-family:'Lora',serif; font-style:italic; font-size:16px; color:var(--text-soft);
+    margin-top:34px; max-width:760px; line-height:1.8;
+  }
+
+  /* ---------- NOSOTRAS ---------- */
+  .about-wrap{ display:flex; gap:56px; align-items:center; margin-top:44px; }
+  .about-photo{ flex:1.1; min-width:0; }
+  .about-photo img{
+    width:100%; display:block; border:1px solid var(--hair);
+    filter:grayscale(55%) contrast(1.05) brightness(.95);
+  }
+  .about-text{ flex:1; }
+  .about-text p.copy{ max-width:none; }
+
+  .badge-black{
+    display:inline-flex; align-items:center; gap:10px;
+    border:1px solid var(--gold); padding:8px 18px; margin-bottom:22px;
+    font-family:'Poppins',sans-serif; font-size:11.5px; letter-spacing:2px; color:var(--gold-bright);
+  }
+
+  .stat-panel{
+    margin-top:56px; border:1px solid var(--gold);
+    background:linear-gradient(160deg, rgba(201,164,103,0.10), transparent 65%);
+    padding:44px 48px; position:relative;
+  }
+  .stat-panel::before{
+    content:''; position:absolute; top:0; left:0; right:0; height:2px;
+    background:linear-gradient(90deg, transparent, var(--gold), transparent);
+  }
+  .stat-panel .sp-label{ font-family:'Poppins',sans-serif; font-size:12px; letter-spacing:2.5px; color:var(--nude); margin-bottom:14px; }
+  .stat-panel .sp-value{ font-family:'Lora',serif; font-style:italic; font-size:52px; color:var(--gold-bright); margin-bottom:6px; }
+  .stat-panel .sp-caption{ font-family:'Poppins',sans-serif; font-weight:300; font-size:14px; color:var(--text-soft); margin-bottom:26px; }
+  .sp-bar{ height:6px; background:#2A2724; border-radius:3px; overflow:hidden; margin-bottom:12px; }
+  .sp-bar-fill{ height:100%; width:79%; background:linear-gradient(90deg, var(--gold), var(--gold-bright)); }
+  .stat-panel .sp-goal{ font-family:'Poppins',sans-serif; font-size:12.5px; color:var(--nude); }
+  .stat-panel .sp-note{
+    font-family:'Lora',serif; font-style:italic; font-size:14.5px; color:var(--text-soft);
+    margin-top:26px; padding-top:22px; border-top:1px solid var(--hair);
+  }
 
   /* ---------- CLOSING ---------- */
   .closing{
@@ -230,6 +293,8 @@
     .lvl{ border-right:none; border-bottom:1px solid var(--hair); }
     .task{ gap:18px; }
     .cards{ flex-direction:column; }
+    .time-stats{ flex-direction:column; }
+    .about-wrap{ flex-direction:column; }
   }
 </style>
 </head>
@@ -245,6 +310,8 @@
     <a href="#propuesta1">Propuesta I</a>
     <a href="#propuesta2">Propuesta II</a>
     <a href="#alcance">Alcance</a>
+    <a href="#tiempos">Tiempos</a>
+    <a href="#nosotras">Nosotras</a>
     <a href="#inversion">Inversión</a>
   </nav>
 </header>
@@ -444,6 +511,53 @@
   <div class="callout">Cualquier herramienta adicional que Paola desee incorporar más adelante se cotiza aparte.</div>
 </section>
 
+<section id="tiempos">
+  <div class="label">PLANIFICACIÓN</div>
+  <h2 class="title">Tiempo de<br>Implementación.</h2>
+  <p class="copy">Un estimado realista de cuánto toma dejar todo montado y operativo, para que puedas planear el lanzamiento de Every Day You con la fecha en mente.</p>
+
+  <div class="time-stats">
+    <div class="tstat">
+      <div class="tnum">90–120</div>
+      <div class="tlabel">Horas de trabajo</div>
+      <div class="tdesc">Es el total de horas que invierte nuestro equipo — diseño, copy, montaje técnico y automatizaciones — para dejar tu producto completamente terminado.</div>
+    </div>
+    <div class="tstat">
+      <div class="tnum">3–5</div>
+      <div class="tlabel">Semanas de implementación</div>
+      <div class="tdesc">Es el tiempo calendario que normalmente toma ese trabajo, de principio a fin, para que tengas todo listo para lanzar.</div>
+    </div>
+  </div>
+
+  <p class="time-note">El tiempo real depende de la velocidad con la que tú nos entregues los materiales (imágenes, contenido del curso, accesos) y apruebes cada entregable en el camino — entre más ágil sea esa parte, más rápido avanzamos.</p>
+</section>
+
+<section id="nosotras">
+  <div class="label">QUIÉNES EJECUTAN TU PROYECTO</div>
+  <h2 class="title">Nosotras.</h2>
+
+  <div class="about-wrap">
+    <div class="about-photo">
+      <img src="assets/ale-evo.jpg" alt="Ale y Evo">
+    </div>
+    <div class="about-text">
+      <div class="badge-black">🚀 DOBLE HOTMART BLACK</div>
+      <p class="copy">Somos Ale y Evo. No te estamos ofreciendo una teoría: te estamos ofreciendo la misma ejecución con la que hemos construido nuestro propio negocio dentro del mundo de los productos digitales.</p>
+      <p class="copy">Hoy somos <b>Doble Hotmart Black</b>, el reconocimiento que entrega la plataforma a quienes superan los <b>US$ 250,000</b> en ventas de productos digitales — nosotras lo alcanzamos dos veces.</p>
+    </div>
+  </div>
+
+  <div class="stat-panel">
+    <div class="sp-label">FACTURACIÓN ACTUAL · UNA SOLA DE NUESTRAS CUENTAS</div>
+    <div class="sp-value">US$ 792,110</div>
+    <div class="sp-caption">Esto es lo que llevamos facturado con uno solo de nuestros productos, en una sola de nuestras cuentas — vamos camino a los US$ 1,000,000 y desbloquear el siguiente nivel, Black Moon.</div>
+    <div class="sp-bar"><div class="sp-bar-fill"></div></div>
+    <div class="sp-goal">79% del camino a US$ 1,000,000</div>
+    <div class="sp-note">Y esto es solo una fracción de lo que hemos facturado en conjunto entre todas nuestras cuentas y productos — la misma experiencia que ponemos a trabajar por Every Day You.</div>
+  </div>
+  <p class="note" style="margin-top:26px;">No trabajamos con cualquiera, y no cualquiera ejecuta como nosotras. Esto es lo que respalda cada pieza que construimos para tu marca.</p>
+</section>
+
 <section id="inversion">
   <div class="label">TU INVERSIÓN</div>
   <h2 class="title">Elige tu nivel<br>de ejecución.</h2>
@@ -452,7 +566,9 @@
     <div class="mcard">
       <div class="tag">PROPUESTA I</div>
       <div class="mname">Montaje Ejecutado</div>
+      <div class="price-old">US$ 3,500</div>
       <div class="price">US$ 3,000</div>
+      <div class="price-tag">TARIFA ESPECIAL</div>
       <div class="pmodel">FEE ÚNICO · EJECUCIÓN COMPLETA</div>
       <ul>
         <li>Oferta, avatar y copy de 3 páginas</li>
@@ -464,7 +580,9 @@
     <div class="mcard reco">
       <div class="tag">PROPUESTA II</div>
       <div class="mname">Montaje + Playbook</div>
+      <div class="price-old">US$ 5,000</div>
       <div class="price">US$ 4,000</div>
+      <div class="price-tag">TARIFA ESPECIAL</div>
       <div class="pmodel">FEE ÚNICO · + 4 SEMANAS DE ACOMPAÑAMIENTO</div>
       <ul>
         <li>Todo lo de la Propuesta I</li>
@@ -476,10 +594,9 @@
   </div>
 
   <div class="why">
-    <div class="why-item"><div class="wn">I</div><p>Nuestra mentoría (Nivel I) cuesta US$ 1,500 porque le da a Paola el conocimiento para implementar sola. Ambas propuestas de este documento son Nivel III — lo hacemos por ti — y por definición valen más: no está comprando información, está comprando el trabajo ya hecho.</p></div>
-    <div class="why-item"><div class="wn">II</div><p>La Propuesta I no es solo "montar la plataforma": incluye la definición de la oferta, la investigación de avatar, el copy de 3 páginas, el montaje completo de la landing y de Hotmart, y dos automatizaciones técnicas completas.</p></div>
-    <div class="why-item"><div class="wn">III</div><p>La Propuesta II suma un playbook estratégico completo del reto Every Day You y 4 semanas de acompañamiento semanal en vivo — no es un documento que se entrega y ya, es guía sostenida durante todo el proceso.</p></div>
-    <div class="why-item"><div class="wn">IV</div><p>Ambas propuestas condensan seis años de experiencia en procesos y plantillas ya probadas — Paola no paga por aprender esto, paga porque nunca tiene que crearlo desde cero.</p></div>
+    <div class="why-item"><div class="wn">I</div><p>La Propuesta I no es solo "montar la plataforma": incluye la definición de la oferta, la investigación de avatar, el copy de 3 páginas, el montaje completo de la landing y de Hotmart, y dos automatizaciones técnicas completas.</p></div>
+    <div class="why-item"><div class="wn">II</div><p>La Propuesta II suma un playbook estratégico completo del reto Every Day You y 4 semanas de acompañamiento semanal en vivo — no es un documento que se entrega y ya, es guía sostenida durante todo el proceso.</p></div>
+    <div class="why-item"><div class="wn">III</div><p>Ambas propuestas condensan seis años de experiencia en procesos y plantillas ya probadas — Paola no paga por aprender esto, paga porque nunca tiene que crearlo desde cero.</p></div>
   </div>
 </section>
 
@@ -491,7 +608,7 @@
 
 <script>
   const links = document.querySelectorAll('nav.top a');
-  const sections = ['resumen','propuesta1','propuesta2','alcance','inversion'].map(id => document.getElementById(id));
+  const sections = ['resumen','propuesta1','propuesta2','alcance','tiempos','nosotras','inversion'].map(id => document.getElementById(id));
   window.addEventListener('scroll', () => {
     let current = sections[0].id;
     sections.forEach(s => { if (window.scrollY >= s.offsetTop - 140) current = s.id; });
