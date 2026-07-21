@@ -35,7 +35,6 @@
     font-weight:500;
   }
 
-  /* ---------- TOP NAV ---------- */
   header{
     position:sticky; top:0; z-index:20;
     background:rgba(10,10,11,0.92);
@@ -66,7 +65,6 @@
   .rule{ width:64px; height:1px; background:var(--gold); margin:26px 0; }
   .rule.center{ margin-left:auto; margin-right:auto; }
 
-  /* ---------- HERO ---------- */
   .hero{
     min-height:92vh; display:flex; flex-direction:column; justify-content:center;
     padding-top:60px; padding-bottom:60px;
@@ -88,13 +86,7 @@
   .hero .prep-line{
     margin-top:18px; font-size:11px; letter-spacing:2px; color:var(--text-soft);
   }
-  .hero .meta{
-    margin-top:20px; font-family:'Poppins',sans-serif; font-weight:300; font-size:12px;
-    letter-spacing:1px; color:var(--text-soft);
-  }
-  .hero .meta b{ color:var(--gold); font-weight:500; }
 
-  /* ---------- CONTEXT / LEVELS ---------- */
   h2.title{
     font-size:62px; font-style:italic; font-weight:400; color:var(--ivory); margin-bottom:16px;
   }
@@ -115,7 +107,6 @@
   .lvl .crown{ position:absolute; top:-1px; left:0; right:0; height:2px; background:var(--gold); display:none; }
   .lvl.featured .crown{ display:block; }
 
-  /* ---------- NIVEL III — PANEL ÚNICO ---------- */
   .level-solo{
     margin-top:50px;
     border:1px solid var(--gold);
@@ -143,7 +134,6 @@
   .level-solo .ls-point .pn{ font-family:'Lora',serif; font-style:italic; font-size:22px; color:var(--gold); margin-bottom:8px; }
   .level-solo .ls-point .pd{ font-family:'Poppins',sans-serif; font-size:13px; line-height:1.7; color:var(--nude); }
 
-  /* ---------- TASK ENTRIES (editorial list, not cards) ---------- */
   .task{ padding:40px 0; border-bottom:1px solid var(--hair); display:flex; gap:44px; }
   .task .idx{ font-family:'Lora',serif; font-style:italic; font-size:48px; color:var(--gold); min-width:76px; }
   .task .body{ flex:1; }
@@ -157,7 +147,6 @@
   .task li::before{ content:'—'; position:absolute; left:0; color:var(--gold); }
   .note{ font-family:'Lora',serif; font-style:italic; font-size:15px; color:var(--text-soft); margin-top:32px; }
 
-  /* ---------- TABLE ---------- */
   table.tools{ width:100%; border-collapse:collapse; margin-top:40px; }
   table.tools th{
     font-family:'Poppins',sans-serif; font-size:12px; letter-spacing:2px; text-transform:uppercase;
@@ -165,16 +154,16 @@
     font-weight:500;
   }
   table.tools td{
-    font-family:'Poppins',sans-serif; font-size:16px; color:var(--text-soft);
-    padding:20px 12px; border-bottom:1px solid var(--hair); vertical-align:top;
+    font-family:'Poppins',sans-serif; font-size:15px; color:var(--text-soft);
+    padding:18px 12px; border-bottom:1px solid var(--hair); vertical-align:top;
   }
   table.tools td.who{ color:var(--nude); }
+  table.tools td.cost{ color:var(--gold-bright); font-weight:500; }
   .callout{
     font-family:'Lora',serif; font-style:italic; font-size:15px; color:var(--text-soft);
     padding:20px 0; border-top:1px solid var(--hair); max-width:820px;
   }
 
-  /* ---------- PRICING — MEMBERSHIP CARDS ---------- */
   .cards{ display:flex; gap:34px; margin-top:50px; flex-wrap:wrap; }
   .mcard{
     flex:1; min-width:320px;
@@ -219,7 +208,6 @@
   .why-item .wn{ font-family:'Lora',serif; font-style:italic; font-size:27px; color:var(--gold); min-width:40px; }
   .why-item p{ font-family:'Poppins',sans-serif; font-size:16.5px; line-height:1.95; color:var(--text-soft); }
 
-  /* ---------- TIEMPOS ---------- */
   .time-stats{ display:flex; gap:34px; margin-top:50px; }
   .tstat{
     flex:1; border:1px solid var(--hair); padding:40px 34px;
@@ -230,6 +218,7 @@
     content:''; position:absolute; top:0; left:0; right:0; height:2px;
     background:linear-gradient(90deg, transparent, var(--gold), transparent);
   }
+  .tstat .ttag{ font-family:'Poppins',sans-serif; font-size:11px; letter-spacing:2px; color:var(--gold); margin-bottom:14px; }
   .tstat .tnum{ font-family:'Lora',serif; font-style:italic; font-size:56px; color:var(--gold-bright); margin-bottom:10px; }
   .tstat .tlabel{ font-family:'Poppins',sans-serif; font-size:13px; letter-spacing:1.5px; text-transform:uppercase; color:var(--nude); margin-bottom:14px; }
   .tstat .tdesc{ font-family:'Poppins',sans-serif; font-weight:300; font-size:13.5px; line-height:1.8; color:var(--text-soft); }
@@ -238,7 +227,6 @@
     margin-top:34px; max-width:760px; line-height:1.8;
   }
 
-  /* ---------- NOSOTRAS ---------- */
   .about-wrap{ display:flex; gap:56px; align-items:center; margin-top:44px; }
   .about-photo{ flex:1.1; min-width:0; }
   .about-photo img{
@@ -274,7 +262,6 @@
     margin-top:26px; padding-top:22px; border-top:1px solid var(--hair);
   }
 
-  /* ---------- CLOSING ---------- */
   .closing{
     text-align:center; padding:150px 56px 130px 56px;
     background:radial-gradient(ellipse at center, rgba(201,164,103,0.06), transparent 70%);
@@ -345,7 +332,7 @@
       </div>
       <div class="ls-point">
         <div class="pn">III</div>
-        <div class="pd">Seis años de experiencia trabajando por ti, no contigo — el resultado, sin el proceso.</div>
+        <div class="pd">Seis años de experiencia trabajando por ti — el resultado, sin el proceso.</div>
       </div>
     </div>
   </div>
@@ -360,11 +347,11 @@
     <div class="idx">I</div>
     <div class="body">
       <div class="t-title">Definición y acompañamiento para crear una oferta irresistible</div>
-      <div class="t-purpose">PARA QUÉ · Sostener todo el lanzamiento y la retención mensual con una oferta clara e irresistible.</div>
+      <div class="t-purpose">PARA QUÉ · Sostener la narrativa del lanzamiento de tu primer producto digital con coherencia, y que puedas utilizarla cuando lo lances.</div>
       <ul>
         <li>Construcción de la Big Idea del lanzamiento: el reto "Every Day You".</li>
         <li>Entregable: guía de cómo ejecutar la oferta — producto principal + bonos + order bumps.</li>
-        <li>Estrategia de retención para la comunidad: qué implementar para que las socias renueven mes a mes.</li>
+        <li>Estrategia de retención para la comunidad: qué implementar para que las personas que compran tu suscripción renueven mes a mes.</li>
       </ul>
     </div>
   </div>
@@ -411,7 +398,7 @@
         <li>Configuración de los order bumps en el checkout personalizado.</li>
         <li>Personalización del checkout: copy + diseño (banner + resumen de la oferta y bonos).</li>
         <li>Creación y configuración de la comunidad Every Day You mediante Hotmart.</li>
-        <li>Entregable: medidas exactas de imágenes necesarias (portadas de módulos, vitrina, área de acceso, comunidad). El equipo de branding de Paola entrega las imágenes finales respetando su línea gráfica.</li>
+        <li>Entregable: diseño de portadas de módulos, vitrina, área de acceso, comunidad, y demás imágenes que se requieran para dejar todo listo por el lado del área de miembros y de interfaz. Para esto necesitamos fotos, recursos e imágenes que ya tengas disponibles, junto con tu línea gráfica, para que nuestro diseñador pueda ejecutar todo sin inconvenientes.</li>
       </ul>
     </div>
   </div>
@@ -434,7 +421,7 @@
     <div class="idx">VI</div>
     <div class="body">
       <div class="t-title">Automatizaciones de Keywords con ManyChat</div>
-      <div class="t-purpose">PARA QUÉ · Capturar y dar seguimiento automático a cada lead durante la preparación, el calentamiento y el lanzamiento.</div>
+      <div class="t-purpose">PARA QUÉ · Capturar a cada lead durante la preparación, el calentamiento y el lanzamiento. Te sirve para automatizar el envío de recursos gratuitos como estrategia, mandar links por interno de forma automática, o responder cuando alguien comenta una palabra específica en una publicación — sin que eso te quite tiempo.</div>
       <ul>
         <li>Implementación de ManyChat: configuración y conexión de cuentas. La suscripción corre por cuenta de Paola.</li>
         <li>Configuración de las keywords requeridas (el soporte de ManyChat cubre hasta el cierre del lanzamiento).</li>
@@ -455,7 +442,7 @@
     </div>
   </div>
 
-  <p class="note">Duración estimada: 3 – 4 semanas. No incluye estrategia de contenido, calendario editorial, reto ni lives — este alcance es exclusivamente técnico y operativo.</p>
+  <p class="note">Duración estimada: 4 semanas. No incluye estrategia de contenido, calendario editorial, reto ni lives — este alcance es exclusivamente técnico y operativo.</p>
 </section>
 
 <section id="propuesta2">
@@ -484,12 +471,12 @@
       <div class="t-title">Acompañamiento Estratégico Mensual</div>
       <div class="t-purpose">PARA QUÉ · Guiar la ejecución del playbook y ajustar la estrategia sobre la marcha durante el mes del lanzamiento.</div>
       <ul>
-        <li>1 asesoría semanal durante 1 mes (4 sesiones) para revisar avance y guiar la ejecución.</li>
+        <li>1 asesoría semanal durante 1 mes (4 sesiones) para revisar avance y guiar la ejecución. Aquí te damos la flexibilidad de tener hasta 2 meses después de la entrega del montaje para lanzar, y usar este acompañamiento de forma adicional durante ese tiempo.</li>
       </ul>
     </div>
   </div>
 
-  <p class="note">Duración estimada: 3 – 4 semanas de montaje + 4 semanas de acompañamiento. No incluye la escritura del pitch de ventas, gestión de campañas publicitarias ni la ejecución en vivo del lanzamiento.</p>
+  <p class="note">Duración estimada: 4 semanas de montaje + 4 semanas de acompañamiento (puedes usarlo cuando decidas lanzar, hasta máximo 2 meses después de la entrega del montaje). No incluye la escritura del pitch de ventas, gestión de campañas publicitarias ni la ejecución de la estrategia del lanzamiento.</p>
 </section>
 
 <section id="alcance">
@@ -498,14 +485,15 @@
   <p class="copy">Nuestro equipo ejecuta la configuración, integración y puesta en marcha de cada herramienta involucrada en el montaje. La suscripción, licencia o costo mensual de cada plataforma corre por cuenta de Paola; nosotros no absorbemos costos de terceros.</p>
 
   <table class="tools">
-    <tr><th>Herramienta</th><th>Costo</th><th>Qué ejecuta nuestro equipo</th></tr>
-    <tr><td>Hosting y dominio para la landing page</td><td class="who">Paola</td><td>Adquisición asistida, configuración e instalación de WordPress.</td></tr>
-    <tr><td>Cuenta y comisiones de la plataforma Hotmart</td><td class="who">Paola</td><td>Configuración completa del producto, checkout y comunidad.</td></tr>
-    <tr><td>Email Marketing (ActiveCampaign / GetResponse / MailerLite / Hotmart Send)</td><td class="who">Paola</td><td>Implementación, integración y automatización de los 5 correos de Listboss.</td></tr>
-    <tr><td>ManyChat (automatización de keywords)</td><td class="who">Paola</td><td>Implementación, configuración de cuentas y keywords.</td></tr>
-    <tr><td>Cualquier otra herramienta necesaria para el montaje</td><td class="who">Paola</td><td>Configuración y puesta en marcha por nuestro equipo.</td></tr>
+    <tr><th>Herramienta</th><th>Costo</th><th>Costo aproximado y recurrencia</th><th>Qué ejecuta nuestro equipo</th></tr>
+    <tr><td>Hosting y dominio para la landing page (ej. Hostinger)</td><td class="who">Paola</td><td class="cost">~US$ 3–5/mes (US$ 40–60/año aprox.) · pago anual</td><td>Adquisición asistida, configuración e instalación de WordPress.</td></tr>
+    <tr><td>Cuenta y comisiones de la plataforma Hotmart</td><td class="who">Paola</td><td class="cost">Sin costo fijo — comisión aprox. 9.9% por venta</td><td>Configuración completa del producto, checkout y comunidad.</td></tr>
+    <tr><td>Email Marketing (ActiveCampaign / GetResponse / MailerLite / Hotmart Send)</td><td class="who">Paola</td><td class="cost">US$ 0–30/mes aprox. según plan y tamaño de lista · mensual o anual</td><td>Implementación, integración y automatización de los 5 correos de Listboss.</td></tr>
+    <tr><td>ManyChat (automatización de keywords)</td><td class="who">Paola</td><td class="cost">US$ 0–30/mes aprox. según número de contactos · mensual</td><td>Implementación, configuración de cuentas y keywords.</td></tr>
+    <tr><td>Cualquier otra herramienta necesaria para el montaje</td><td class="who">Paola</td><td class="cost">Variable, se cotiza según la herramienta</td><td>Configuración y puesta en marcha por nuestro equipo.</td></tr>
   </table>
 
+  <div class="callout">Los costos aproximados son valores de referencia según tarifas públicas vigentes al momento de esta propuesta; pueden variar según el proveedor, el país y el plan que elijas.</div>
   <div class="callout">El soporte de ManyChat cubre desde la implementación hasta el cierre del lanzamiento; soporte posterior se negocia aparte.</div>
   <div class="callout">La automatización de Listboss es una implementación única; si se requiere soporte continuo, se cotiza y agenda por separado.</div>
   <div class="callout">Cualquier herramienta adicional que Paola desee incorporar más adelante se cotiza aparte.</div>
@@ -518,12 +506,14 @@
 
   <div class="time-stats">
     <div class="tstat">
-      <div class="tnum">90–120</div>
-      <div class="tlabel">Horas de trabajo</div>
-      <div class="tdesc">Es el total de horas que invierte nuestro equipo — diseño, copy, montaje técnico y automatizaciones — para dejar tu producto completamente terminado.</div>
+      <div class="ttag">PROPUESTA I</div>
+      <div class="tnum">4 semanas</div>
+      <div class="tlabel">Semanas de implementación</div>
+      <div class="tdesc">Es el tiempo calendario que normalmente toma ese trabajo, de principio a fin, para que tengas todo listo para lanzar.</div>
     </div>
     <div class="tstat">
-      <div class="tnum">3–5</div>
+      <div class="ttag">PROPUESTA II</div>
+      <div class="tnum">5 semanas</div>
       <div class="tlabel">Semanas de implementación</div>
       <div class="tdesc">Es el tiempo calendario que normalmente toma ese trabajo, de principio a fin, para que tengas todo listo para lanzar.</div>
     </div>
@@ -566,8 +556,8 @@
     <div class="mcard">
       <div class="tag">PROPUESTA I</div>
       <div class="mname">Montaje Ejecutado</div>
-      <div class="price-old">US$ 3,500</div>
-      <div class="price">US$ 3,000</div>
+      <div class="price-old">US$ 3,700</div>
+      <div class="price">US$ 3,200</div>
       <div class="price-tag">TARIFA ESPECIAL</div>
       <div class="pmodel">FEE ÚNICO · EJECUCIÓN COMPLETA</div>
       <ul>
@@ -580,8 +570,8 @@
     <div class="mcard reco">
       <div class="tag">PROPUESTA II</div>
       <div class="mname">Montaje + Playbook</div>
-      <div class="price-old">US$ 5,000</div>
-      <div class="price">US$ 4,000</div>
+      <div class="price-old">US$ 5,200</div>
+      <div class="price">US$ 4,200</div>
       <div class="price-tag">TARIFA ESPECIAL</div>
       <div class="pmodel">FEE ÚNICO · + 4 SEMANAS DE ACOMPAÑAMIENTO</div>
       <ul>
