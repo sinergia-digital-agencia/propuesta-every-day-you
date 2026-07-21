@@ -246,10 +246,21 @@
     margin-top:56px; border:1px solid var(--gold);
     background:linear-gradient(160deg, rgba(201,164,103,0.10), transparent 65%);
     padding:44px 48px; position:relative;
+    display:flex; gap:44px; align-items:center; flex-wrap:wrap;
   }
   .stat-panel::before{
     content:''; position:absolute; top:0; left:0; right:0; height:2px;
     background:linear-gradient(90deg, transparent, var(--gold), transparent);
+  }
+  .stat-panel .sp-text{ flex:1.3; min-width:280px; }
+  .stat-panel .sp-shot{ flex:1; min-width:220px; text-align:center; }
+  .stat-panel .sp-shot img{
+    width:100%; max-width:280px; border-radius:14px;
+    border:1px solid var(--gold); box-shadow:0 20px 40px rgba(0,0,0,0.4);
+  }
+  .stat-panel .sp-shot .sp-shot-tag{
+    font-family:'Poppins',sans-serif; font-size:10px; letter-spacing:1.5px;
+    color:var(--nude); margin-top:14px;
   }
   .stat-panel .sp-label{ font-family:'Poppins',sans-serif; font-size:12px; letter-spacing:2.5px; color:var(--nude); margin-bottom:14px; }
   .stat-panel .sp-value{ font-family:'Lora',serif; font-style:italic; font-size:52px; color:var(--gold-bright); margin-bottom:6px; }
@@ -282,6 +293,7 @@
     .cards{ flex-direction:column; }
     .time-stats{ flex-direction:column; }
     .about-wrap{ flex-direction:column; }
+    .stat-panel{ flex-direction:column; }
   }
 </style>
 </head>
@@ -538,12 +550,18 @@
   </div>
 
   <div class="stat-panel">
-    <div class="sp-label">FACTURACIÓN ACTUAL · UNA SOLA DE NUESTRAS CUENTAS</div>
-    <div class="sp-value">US$ 792,110</div>
-    <div class="sp-caption">Esto es lo que llevamos facturado con uno solo de nuestros productos, en una sola de nuestras cuentas — vamos camino a los US$ 1,000,000 y desbloquear el siguiente nivel, Black Moon.</div>
-    <div class="sp-bar"><div class="sp-bar-fill"></div></div>
-    <div class="sp-goal">79% del camino a US$ 1,000,000</div>
-    <div class="sp-note">Y esto es solo una fracción de lo que hemos facturado en conjunto entre todas nuestras cuentas y productos — la misma experiencia que ponemos a trabajar por Every Day You.</div>
+    <div class="sp-text">
+      <div class="sp-label">FACTURACIÓN ACTUAL · UNA SOLA DE NUESTRAS CUENTAS</div>
+      <div class="sp-value">US$ 792,110</div>
+      <div class="sp-caption">Esto es lo que llevamos facturado con uno solo de nuestros productos, en una sola de nuestras cuentas — vamos camino a los US$ 1,000,000 y desbloquear el siguiente nivel, Black Moon.</div>
+      <div class="sp-bar"><div class="sp-bar-fill"></div></div>
+      <div class="sp-goal">79% del camino a US$ 1,000,000</div>
+      <div class="sp-note">Y esto es solo una fracción de lo que hemos facturado en conjunto entre todas nuestras cuentas y productos — la misma experiencia que ponemos a trabajar por Every Day You.</div>
+    </div>
+    <div class="sp-shot">
+      <img src="assets/hotmart-evolucion.png" alt="Panel de facturación Hotmart Black">
+      <div class="sp-shot-tag">CAPTURA REAL DE NUESTRO PANEL EN HOTMART</div>
+    </div>
   </div>
   <p class="note" style="margin-top:26px;">No trabajamos con cualquiera, y no cualquiera ejecuta como nosotras. Esto es lo que respalda cada pieza que construimos para tu marca.</p>
 </section>
