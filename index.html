@@ -138,6 +138,20 @@
   .task .idx{ font-family:'Lora',serif; font-style:italic; font-size:48px; color:var(--gold); min-width:76px; }
   .task .body{ flex:1; }
   .task .t-title{ font-family:'Lora',serif; font-size:26px; color:var(--ivory); margin-bottom:12px; }
+  .t-title-row{ display:flex; align-items:flex-start; justify-content:space-between; gap:24px; flex-wrap:wrap; }
+  .t-title-row .t-title{ margin-bottom:0; }
+  .t-price{
+    font-family:'Poppins',sans-serif; font-weight:600; font-size:13px; letter-spacing:1px;
+    color:var(--onyx); background:var(--gold-bright); border-radius:3px;
+    padding:7px 15px; white-space:nowrap; margin-top:2px;
+  }
+  .t-price.bono{ background:transparent; border:1px solid var(--nude); color:var(--nude); }
+  .stage-total{
+    margin-top:36px; padding-top:26px; border-top:1px solid var(--hair);
+    display:flex; justify-content:flex-end; align-items:center; gap:16px;
+  }
+  .stage-total .stlabel{ font-family:'Poppins',sans-serif; font-size:13px; letter-spacing:1.5px; text-transform:uppercase; color:var(--text-soft); }
+  .stage-total .stval{ font-family:'Lora',serif; font-style:italic; font-size:30px; color:var(--gold-bright); }
   .task .t-purpose{ font-family:'Poppins',sans-serif; font-size:15px; letter-spacing:.3px; color:var(--nude); margin-bottom:20px; font-style:normal; }
   .task ul{ list-style:none; }
   .task li{
@@ -311,6 +325,7 @@
     <a href="#alcance">Alcance</a>
     <a href="#tiempos">Tiempos</a>
     <a href="#nosotras">Nosotras</a>
+    <a href="#garantia">Garantía</a>
     <a href="#inversion">Inversión</a>
   </nav>
 </header>
@@ -358,7 +373,7 @@
   <div class="task">
     <div class="idx">I</div>
     <div class="body">
-      <div class="t-title">Definición y acompañamiento para crear una oferta irresistible</div>
+      <div class="t-title-row"><div class="t-title">Definición y acompañamiento para crear una oferta irresistible</div><div class="t-price">US$ 450</div></div>
       <div class="t-purpose">PARA QUÉ · Sostener la narrativa del lanzamiento de tu primer producto digital con coherencia, y que puedas utilizarla cuando lo lances.</div>
       <ul>
         <li>Construcción de la Big Idea del lanzamiento: el reto "Every Day You".</li>
@@ -371,7 +386,7 @@
   <div class="task">
     <div class="idx">II</div>
     <div class="body">
-      <div class="t-title">Investigación del Avatar y el Mercado</div>
+      <div class="t-title-row"><div class="t-title">Investigación del Avatar y el Mercado</div><div class="t-price">US$ 650</div></div>
       <div class="t-purpose">PARA QUÉ · Que cada palabra hable directamente al deseo real de la mujer que Paola quiere transformar.</div>
       <ul>
         <li>Entregable: perfil del Avatar.</li>
@@ -383,7 +398,7 @@
   <div class="task">
     <div class="idx">III</div>
     <div class="body">
-      <div class="t-title">Montaje de la Landing Page</div>
+      <div class="t-title-row"><div class="t-title">Montaje de la Landing Page</div><div class="t-price">US$ 600</div></div>
       <div class="t-purpose">PARA QUÉ · Un espacio propio, fuera de Hotmart, con la elegancia y la conversión que la marca merece.</div>
       <ul>
         <li>Adquisición de hosting y dominio, y configuración.</li>
@@ -397,7 +412,7 @@
   <div class="task">
     <div class="idx">IV</div>
     <div class="body">
-      <div class="t-title">Montaje del Producto en Hotmart y Configuración de la Comunidad Every Day You</div>
+      <div class="t-title-row"><div class="t-title">Montaje del Producto en Hotmart y Configuración de la Comunidad Every Day You</div><div class="t-price">US$ 1,400</div></div>
       <div class="t-purpose">PARA QUÉ · Que el producto y la comunidad funcionen sin fricción desde el día uno, cuidando cada detalle de la experiencia.</div>
       <ul>
         <li>Creación del producto principal en Hotmart por suscripción.</li>
@@ -418,7 +433,7 @@
   <div class="task">
     <div class="idx">V</div>
     <div class="body">
-      <div class="t-title">Automatización de Listboss para Hotmart</div>
+      <div class="t-title-row"><div class="t-title">Automatización de Listboss para Hotmart</div><div class="t-price">US$ 500</div></div>
       <div class="t-purpose">PARA QUÉ · Que cada compradora reciba, sin intervención manual, el mensaje correcto según el estado de su pago.</div>
       <ul>
         <li>Implementación de la herramienta de email marketing (ActiveCampaign, GetResponse, MailerLite o Hotmart Send). La suscripción corre por cuenta de Paola; nuestro equipo ejecuta la implementación.</li>
@@ -432,7 +447,7 @@
   <div class="task">
     <div class="idx">VI</div>
     <div class="body">
-      <div class="t-title">Automatizaciones de Keywords con ManyChat</div>
+      <div class="t-title-row"><div class="t-title">Automatizaciones de Keywords con ManyChat</div><div class="t-price">US$ 300</div></div>
       <div class="t-purpose">PARA QUÉ · Capturar a cada lead durante la preparación, el calentamiento y el lanzamiento. Te sirve para automatizar el envío de recursos gratuitos como estrategia, mandar links por interno de forma automática, o responder cuando alguien comenta una palabra específica en una publicación — sin que eso te quite tiempo.</div>
       <ul>
         <li>Implementación de ManyChat: configuración y conexión de cuentas. La suscripción corre por cuenta de Paola.</li>
@@ -444,7 +459,7 @@
   <div class="task">
     <div class="idx">VII</div>
     <div class="body">
-      <div class="t-title">Bono: Capacitación de Post-Compra</div>
+      <div class="t-title-row"><div class="t-title">Bono: Capacitación de Post-Compra</div><div class="t-price bono">BONO INCLUIDO · valor US$ 150</div></div>
       <div class="t-purpose">PARA QUÉ · Que su equipo de soporte resuelva las solicitudes más comunes sin depender de nosotros.</div>
       <ul>
         <li>Cómo cambiar el correo de una compradora.</li>
@@ -454,6 +469,8 @@
     </div>
   </div>
 
+  <div class="stage-total"><div class="stlabel">Valor de mercado si se contrata por separado</div><div class="stval">US$ 3,900</div></div>
+  <p class="note" style="margin-top:6px;">Tu inversión en el Paquete (Propuesta I): <b style="color:var(--gold-bright); font-style:normal;">US$ 3,200</b> — ahorras US$ 700 frente al valor individual de cada etapa.</p>
   <p class="note">Duración estimada: 4 semanas. No incluye estrategia de contenido, calendario editorial, reto ni lives — este alcance es exclusivamente técnico y operativo.</p>
 </section>
 
@@ -465,7 +482,7 @@
   <div class="task">
     <div class="idx">VIII</div>
     <div class="body">
-      <div class="t-title">Playbook de Lanzamiento Mínimo Viable (tipo Webinar)</div>
+      <div class="t-title-row"><div class="t-title">Playbook de Lanzamiento Mínimo Viable (tipo Webinar)</div><div class="t-price">US$ 750</div></div>
       <div class="t-purpose">PARA QUÉ · Que Paola tenga la hoja de ruta completa del reto Every Day You, sin diseñar la estrategia desde cero.</div>
       <ul>
         <li>Calendario de contenido, con ideas y tips para cada publicación.</li>
@@ -480,7 +497,7 @@
   <div class="task">
     <div class="idx">IX</div>
     <div class="body">
-      <div class="t-title">Acompañamiento Estratégico Mensual</div>
+      <div class="t-title-row"><div class="t-title">Acompañamiento Estratégico Mensual</div><div class="t-price">US$ 500</div></div>
       <div class="t-purpose">PARA QUÉ · Guiar la ejecución del playbook y ajustar la estrategia sobre la marcha durante el mes del lanzamiento.</div>
       <ul>
         <li>1 asesoría semanal durante 1 mes (4 sesiones) para revisar avance y guiar la ejecución. Aquí te damos la flexibilidad de tener hasta 2 meses después de la entrega del montaje para lanzar, y usar este acompañamiento de forma adicional durante ese tiempo.</li>
@@ -488,7 +505,10 @@
     </div>
   </div>
 
+  <div class="stage-total"><div class="stlabel">Valor de mercado del Playbook + Acompañamiento</div><div class="stval">US$ 1,250</div></div>
+  <p class="note" style="margin-top:6px;">Adicional que pagas sobre la Propuesta I: <b style="color:var(--gold-bright); font-style:normal;">US$ 1,000</b> — ahorras US$ 250 más frente al valor individual.</p>
   <p class="note">Duración estimada: 4 semanas de montaje + 4 semanas de acompañamiento (puedes usarlo cuando decidas lanzar, hasta máximo 2 meses después de la entrega del montaje). No incluye la escritura del pitch de ventas, gestión de campañas publicitarias ni la ejecución de la estrategia del lanzamiento.</p>
+  <p class="note" style="margin-top:14px;">Total Propuesta II (Propuesta I + Playbook + Acompañamiento): <b style="color:var(--gold-bright); font-style:normal;">US$ 4,200</b> · valor de mercado combinado US$ 5,150 — ahorras US$ 950 en total.</p>
 </section>
 
 <section id="alcance">
@@ -520,13 +540,13 @@
     <div class="tstat">
       <div class="ttag">PROPUESTA I</div>
       <div class="tnum">4 semanas</div>
-      <div class="tlabel">Semanas de implementación</div>
+      <div class="tlabel">De implementación</div>
       <div class="tdesc">Es el tiempo calendario que normalmente toma ese trabajo, de principio a fin, para que tengas todo listo para lanzar.</div>
     </div>
     <div class="tstat">
       <div class="ttag">PROPUESTA II</div>
       <div class="tnum">5 semanas</div>
-      <div class="tlabel">Semanas de implementación</div>
+      <div class="tlabel">De implementación</div>
       <div class="tdesc">Es el tiempo calendario que normalmente toma ese trabajo, de principio a fin, para que tengas todo listo para lanzar.</div>
     </div>
   </div>
@@ -564,6 +584,28 @@
     </div>
   </div>
   <p class="note" style="margin-top:26px;">No trabajamos con cualquiera, y no cualquiera ejecuta como nosotras. Esto es lo que respalda cada pieza que construimos para tu marca.</p>
+</section>
+
+<section id="garantia">
+  <div class="label">RESPALDO DEL PROYECTO</div>
+  <h2 class="title">Garantía de<br>Implementación.</h2>
+  <p class="copy">Queremos que emprendas este proyecto con total tranquilidad, sabiendo que cada pieza que construimos queda funcionando como debe.</p>
+
+  <div class="level-solo">
+    <div class="ls-tag">NUESTRO COMPROMISO CONTIGO</div>
+    <div class="ls-title">Garantizamos un ecosistema 100% funcional.</div>
+    <p class="ls-desc">Garantizamos que recibirás un ecosistema de tu producto digital completamente funcional y listo para vender. Si al finalizar el proyecto encuentras algún elemento del alcance contratado que no esté implementado correctamente, lo corregiremos sin costo hasta dejarlo completamente operativo.</p>
+    <div class="ls-points">
+      <div class="ls-point">
+        <div class="pn">I</div>
+        <div class="pd">Cobertura total del alcance contratado: cada entregable descrito en la Propuesta I y, si aplica, en la Propuesta II.</div>
+      </div>
+      <div class="ls-point">
+        <div class="pn">II</div>
+        <div class="pd">Corrección sin costo adicional, las veces que sea necesario, hasta que el elemento quede completamente operativo.</div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section id="inversion">
@@ -616,7 +658,7 @@
 
 <script>
   const links = document.querySelectorAll('nav.top a');
-  const sections = ['resumen','propuesta1','propuesta2','alcance','tiempos','nosotras','inversion'].map(id => document.getElementById(id));
+  const sections = ['resumen','propuesta1','propuesta2','alcance','tiempos','nosotras','garantia','inversion'].map(id => document.getElementById(id));
   window.addEventListener('scroll', () => {
     let current = sections[0].id;
     sections.forEach(s => { if (window.scrollY >= s.offsetTop - 140) current = s.id; });
